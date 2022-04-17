@@ -11,6 +11,9 @@
         <li v-if="showPostsBoard" class="nav-item">
           <router-link to="/posts" class="nav-link">Posts</router-link>
         </li>
+        <li v-if="showPostsBoard" class="nav-item">
+          <router-link to="/dashboard" class="nav-link">Dashboard</router-link>
+        </li>
         <li class="nav-item">
           <router-link to="/help" class="nav-link">Help</router-link>
         </li>

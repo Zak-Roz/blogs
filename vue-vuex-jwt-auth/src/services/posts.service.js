@@ -4,6 +4,10 @@ class Post {
   getAll() {
     return api.get('/posts/getAll');
   }
+
+  statistics() {
+    return api.get('/posts/statistics');
+  }
   
   getById(id) {
     return api.get(`/posts/getById?id=${id}`);

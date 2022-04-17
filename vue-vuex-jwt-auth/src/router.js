@@ -8,6 +8,8 @@ import Profile from './views/navigation/Profile.vue';
 import Register from './views/navigation/Register.vue';
 import Login from './views/navigation/Login.vue';
 
+import Dashboard from './views/navigation/Dashboard.vue';
+
 import Post from './views/posts/Post.vue';
 import NewPost from './views/posts/NewPost.vue';
 import Posts from './views/posts/Posts.vue';
@@ -22,6 +24,11 @@ export const router = new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/dashboard',
+      name: 'Dashboard',
+      component: Dashboard
     },
     {
       path: '/new-post',

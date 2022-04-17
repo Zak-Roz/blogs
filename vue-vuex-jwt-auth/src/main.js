@@ -23,6 +23,9 @@ import {
   faSignOutAlt
 } from '@fortawesome/free-solid-svg-icons';
 
+import Chartkick from 'vue-chartkick'
+import Chart from 'chart.js/auto'
+
 library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt);
 
 Vue.config.productionTip = false;
@@ -35,6 +38,7 @@ Vue.use(Vuex);
 setupInterceptors(store);
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(Chartkick.use(Chart))
 
 new Vue({
   router,

@@ -7,6 +7,10 @@ export const posts = {
     getAll() {
       return Post.getAll();
     },
+    
+    statistics() {
+      return Post.statistics();
+    },
 
     getById(_, id) {
       return Post.getById(id);

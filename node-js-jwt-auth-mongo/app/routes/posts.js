@@ -12,6 +12,7 @@ postsRouter
     next();
   })
   .get('/getAll', [authJwt.verifyToken], controller.getAll)
+  .get('/statistics', [authJwt.verifyToken], controller.statistics)
   .get('/getById', [authJwt.verifyToken], controller.getById)
   .delete('/deleteById', [authJwt.verifyToken], controller.deleteById)
   .post('/new', [authJwt.verifyToken], upload.array('files', 100), controller.create)
